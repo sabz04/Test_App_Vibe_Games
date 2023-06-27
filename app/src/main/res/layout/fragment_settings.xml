@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@android:color/transparent"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/serverImagePosterImageView"
+                    android:background="@drawable/logo_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ImageView>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="250dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background"
+                android:text="@string/setting_reinstall_game"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="250dp"
+                android:textSize="18dp"
+                android:background="@drawable/button_background"
+
+                android:textColor="@color/white"
+                android:text="@string/setting_delete_config"
+                android:layout_height="wrap_content"/>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="@string/setting_better_graphics"
+                        android:padding="10dp" />
+
+                    <Switch
+                        android:thumbTint="@color/matreshka_primary"
+                        android:trackTint="@color/matreshka_secondary"
+                        android:id="@+id/switchButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="@string/setting_fps_counter"
+                        android:padding="10dp" />
+
+                    <Switch
+                        android:thumbTint="@color/matreshka_primary"
+                        android:trackTint="@color/matreshka_secondary"
+                        android:id="@+id/switchButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
